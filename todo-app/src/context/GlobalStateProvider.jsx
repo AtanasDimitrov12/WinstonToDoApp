@@ -1,4 +1,3 @@
-// src/context/GlobalStateProvider.jsx
 import React, { useEffect, useCallback, useState } from "react";
 
 const initialGlobalState = {
@@ -31,8 +30,6 @@ const GlobalStateProvider = ({ children }) => {
 
 const useGlobalState = () => React.useContext(GlobalState);
 
-// 👇 ADD THIS LINE
 export { GlobalStateProvider, useGlobalState, GlobalState };
 
-// 👇 Keep this too for console access (optional)
 window.GlobalState = GlobalState;
